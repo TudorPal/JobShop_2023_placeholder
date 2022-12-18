@@ -41,7 +41,7 @@ body{
     align-items: center;
     transition: transform 0.35s;
     justify-content: center;
-    z-index:999;
+    z-index:1;
   }
   
   .Menu img {
@@ -79,49 +79,24 @@ body{
   .Menu a{
       font-size: medium;
   }
-  .mapSize iframe{
-
-      width:400px;
-  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .mapSize iframe{
 
-      width:300px;
-  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .mytext{
-      font-size: 40px;
-  }
-  .white_content{
-      width: 60%;
-      height: 60%;
-      padding: 20;
-  }
-  .mapSize iframe{
-      width:400px;
-  }
+
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .mytext{
-      font-size: 45px;
-  }
-  .mapSize iframe{
-      width:450px;
-  }
   
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .mapSize iframe{
-      width:600px;
-  }
+
 }
