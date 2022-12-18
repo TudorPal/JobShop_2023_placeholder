@@ -1,0 +1,127 @@
+body{
+    background-color: #cda65f;
+    color: #fff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    --Menu-height: 65px; /*var(--Menu-height)*/
+}
+.main{
+    margin-top: var(--Menu-height);
+    background-image: url('placeholder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.titlu{
+  color: #0061bc;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+.titluBox
+{
+  border: 1px solid #0061bc;
+  border-left: none;
+  border-right: none;
+  height: 80px;
+}
+.Menu {
+    overflow: hidden;
+    background-color: #431f5c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--Menu-height);
+    display: flex;
+    align-items: center;
+    transition: transform 0.35s;
+    justify-content: center;
+    z-index:999;
+  }
+  
+  .Menu img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 25%;
+    padding-left: 0px;
+  }
+  
+  .Menu a {
+    font-weight:bold;
+    color: white;
+    padding: 20px 20px;
+    font-size: 120%;
+    text-decoration: none;
+    font-family: Verdana;
+    transition: 0.5s;
+  }
+  
+  .Menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  
+  .Menu--hidden {
+    transform: translateY(calc(-1* var(--Menu-height)));
+    box-shadow: none;
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .Menu{
+      font-size:medium
+  }
+  .Menu a{
+      font-size: medium;
+  }
+  .mapSize iframe{
+
+      width:400px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mapSize iframe{
+
+      width:300px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mytext{
+      font-size: 40px;
+  }
+  .white_content{
+      width: 60%;
+      height: 60%;
+      padding: 20;
+  }
+  .mapSize iframe{
+      width:400px;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .mytext{
+      font-size: 45px;
+  }
+  .mapSize iframe{
+      width:450px;
+  }
+  
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .mapSize iframe{
+      width:600px;
+  }
+}
