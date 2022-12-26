@@ -12,6 +12,10 @@ body{
   --Menu-height: 65px; /*var(--Menu-height)*/
 }
 
+.myMargin{
+  margin-top: var(--Menu-height);
+}
+
 .titlu{
   color: #0061bc;
   font-family: 'Helvetica', sans-serif;
