@@ -11,14 +11,7 @@ body{
   padding: 0;
   --Menu-height: 65px; /*var(--Menu-height)*/
 }
-.main{
-  margin-top: var(--Menu-height);
-  background-image: url('main1.png');
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-}
+
 .titlu{
   color: #0061bc;
   font-family: 'Helvetica', sans-serif;
@@ -79,6 +72,16 @@ body{
   display: none;
 }
 
+.mapSize{
+  height: 350px;
+  width: 600px;
+}
+
+.icon2{
+  height: 30px;
+  width: 30px;
+}
+
 @media screen and (max-width: 700px) {
   .Menu a:not(:first-child){
     display: none;
@@ -109,27 +112,15 @@ body{
   }
 }
 
-  /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-  
+@media screen and (max-width: 800px) {
+  .mapSize{
+    height: 250px;
+    width: 400px;
+  }
 }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  
-}
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
+@media screen and (max-width: 500px) {
+  .mapSize{
+    height: 250px;
+    width: 300px;
+  }
 }
